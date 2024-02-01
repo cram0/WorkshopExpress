@@ -130,6 +130,8 @@ Dans ce cas, elle enverra `4`.
 Faites la même chose pour les 3 autres operations de base avec ces endpoints :
 `/sub`, `/div`, `/mul`
 
+Pensez à la gestion d'erreur, que se passera-t-il si on envoie non pas 1 mais "1" ? Ou des lettres ? Des fonctions en js existent pour le vérifier.
+
 #### Nouvelle route
 
 Faites une route qui écoute les requêtes de type GET.
@@ -147,6 +149,8 @@ Exemple avec `?min=4&max=10`
 On aura en retour :
 
 `6`
+
+Attention, les query parameters sont des chaines de caractères :).
 
 ### 3 _ Ajouter un middleware
 
